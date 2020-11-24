@@ -1,7 +1,8 @@
-package matrix;
+package abstraction;
+
 import java.util.Scanner;
-import matrix.UserController;
-import matrix.UserDto;
+import abstraction.UserController;
+import abstraction.UserDto;
 public class UserApp {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -355,3 +356,4 @@ class UserDaoImpl implements UserDao {
 	}
 
 }
+
