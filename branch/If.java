@@ -1,6 +1,8 @@
 package branch;
 // 제어문
 
+import java.util.Arrays;
+
 // 제어문이란 특정 코드가 실행될지 혹은 반복될지를 결정하는 특수한 코드이다.
 // 제어문에는 조건문과 반복문이 있다.
 // 조건문: 조건을 체크해서 true가 나오면 특정 코드들을 실행
@@ -20,15 +22,15 @@ package branch;
 // 유효범위가 끝나면 해당 변수는 사라진걸로 취급되서 호출할 수도 없다.
 
 public class If {
-    public static void main(String[] args) {
-        int number = 3;
-        if (number < 0) {
-            String string1 = "abc";
-            System.out.println("number: " + number);
-            System.out.println("number는 0 이하입니다.");
+    public static void main(String... args) {
 
-        }
-
-        System.out.println("프로그램 종료");
+        Arrays.asList(-1).stream().forEach(i ->{
+            if (i.intValue() > 0) {
+                System.out.println("number: " + i.intValue());
+            } else{
+                System.out.println("number는 0 이하입니다.");
+            }
+            
+        });
     }
 }
